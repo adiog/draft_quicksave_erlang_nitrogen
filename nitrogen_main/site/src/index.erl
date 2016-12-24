@@ -1,20 +1,25 @@
 %% -*- mode: nitrogen -*-
+% This file is a part of quicksave project.
+% Copyright (c) 2016 Aleksander Gajewski <adiog@brainfuck.pl>.
+
 -module (index).
 -compile(export_all).
 -include_lib("nitrogen_core/include/wf.hrl").
-
+-import(wf_context, [url/0]).
+-import(dependency_factory, [get_item_table/0]).
 main() -> #template { file="./site/templates/bare.html" }.
 
-title() -> "Welcome to Nitrogen".
+title() -> "quicksave.io erlang edition".
 
 body() ->
     #container_12 { body=[
         #grid_8 { alpha=true, prefix=2, suffix=2, omega=true, body=inner_body() }
     ]}.
 
+
 inner_body() -> 
     [
-        #h1 { text="Welcome to Nitrogen" },
+        #h1 { text=url() },
         #p{},
         "
         If you can see this page, then your Nitrogen server is up and
@@ -37,3 +42,5 @@ event(click) ->
         body="You clicked the button!", 
         actions=#effect { effect=highlight }
     }).
+
+json_main() -> [abc, def].
