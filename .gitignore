@@ -1,0 +1,10 @@
+nitrogen_main/site/ebin/*
+*.sw?
+nitrogen_main/erl_crash.dump
+*~
+nitrogen_main/log
+nitrogen_main/scratch
+nitrogen_main/lib/nitrogen_core
+nitrogen_main/lib/simple_bridge
+nitrogen_main/lib/nprocreg
+nitrogen_main/lib/sync
