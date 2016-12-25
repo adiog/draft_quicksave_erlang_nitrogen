@@ -3,6 +3,9 @@
 % Copyright (c) 2016 Aleksander Gajewski <adiog@brainfuck.pl>.
 
 -module (index).
+-author("Aleksander Gajewski <adiog@brainfuck.pl>").
+
+%% API
 -compile(export_all).
 -include_lib("nitrogen_core/include/wf.hrl").
 -import(wf_context, [url/0]).
