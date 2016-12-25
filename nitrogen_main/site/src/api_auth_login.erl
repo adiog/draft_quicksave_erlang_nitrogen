@@ -19,11 +19,7 @@ main() -> #template { file="./site/templates/bare.html" }.
 
 title() -> "quicksave.io erlang edition".
 
-body() -> "Use json API".
-
-dispatch_item_create_request() ->
-    ErlangItemCreateRequest = wf:json_decode(wf:q(item_create_request)).
-%    #item_create_request{item}.
+body() -> "Use json API (add .json suffix to URL).".
 
 json_main() ->
     authenticate(wf:q(username), wf:q(password)).

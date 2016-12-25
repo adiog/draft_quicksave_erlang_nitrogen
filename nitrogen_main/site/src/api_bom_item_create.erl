@@ -19,7 +19,7 @@ main() -> #template { file="./site/templates/bare.html" }.
 
 title() -> "quicksave.io erlang edition".
 
-body() -> "Use json API".
+body() -> "Use json API (add .json suffix to URL).".
 
 dispatch_item_create_request() ->
     #item_create_request{

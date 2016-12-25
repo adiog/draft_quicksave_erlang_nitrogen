@@ -19,7 +19,7 @@ main() -> #template { file="./site/templates/bare.html" }.
 
 title() -> "quicksave.io erlang edition".
 
-body() -> "Use json API".
+body() -> "Use json API (add .json suffix to URL).".
 
 dispatch_item_retrieve_request() ->
     {ItemId, _} = string:to_integer(wf:q(item_id)),
